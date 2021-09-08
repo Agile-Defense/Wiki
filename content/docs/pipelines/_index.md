@@ -12,3 +12,27 @@ menu:
 weight: 30
 toc: true
 ---
+
+## Create a pipeline
+
+To create a pipeline in GoCD, see [Create a GoCd Pipeline →]({{< relref "create" >}})
+
+<br/>
+
+## Pipeline Configurations
+
+Have questions about pipeline, stage, and job configurations and their values?, go to [GoCD Configurations →]({{< relref "pipeline-config" >}})
+
+<br/>
+
+## Create a Default Go-Agent
+
+Create a standard go-agent, go visit [Configure a GoCD Agent →]({{< relref "agent" >}})
+
+<br/>
+
+## Just Go-Agent on Linux
+
+Have a Linux box and want go-agent installed?, see [Go-Agent ONLY →]({{< relref "agent/#go-agent-only" >}})
+
+<br/>
