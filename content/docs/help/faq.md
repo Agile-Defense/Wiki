@@ -13,14 +13,6 @@ weight: 630
 toc: true
 ---
 
-## Hyas?
-
-Doks is a [Hyas theme](https://gethyas.com/themes/) build by the creator of Hyas.
-
-## Footer notice?
-
-Please keep it in place.
-
 ## Keyboard shortcuts for search?
 
 - focus: `Ctrl + /`
@@ -28,23 +20,33 @@ Please keep it in place.
 - open: `Enter`
 - close: `Esc`
 
-## Other documentation?
 
-- [Netlify](https://docs.netlify.com/)
-- [Hugo](https://gohugo.io/documentation/)
+## GoCD Stage not getting assigned an agent
 
-## Can I get support?
+There are three possibilities:
 
-Create a topic:
+1. Pipeline not in the correct Environment.
+   - Check to see if the pipeline is in the environment by logging into [GoCD](http://gocd.agiledefense.lab).
+   - Navigate to **Admin** at the top menu and select **Environments** in its drop down.
+   - Find your environment and click on it to expand it. 
+   - If you do not see your pipeline under **Pipelines**, click the edit button next to the **Pipelines** header.
+   - Check the box next to your pipeline to add it. 
+   - Then hit **Save**.
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+2. Go-Agent not able to reach GoCD Server
+   - `ssh` to the specific go-agent and inspect `go-agent-launcher.log` file. 
 
-## Contact the creator?
+3. Unable to connect - SSL handshake error or connection reset
+   - `ssh` to the specific go-agent and inspect `go-agent-bootstrapper.out.log` file. 
 
-Send `h-enk` a message:
 
-- [Netlify Community](https://community.netlify.com/)
-- [Hugo Forums](https://discourse.gohugo.io/)
-- [Doks Discussions](https://github.com/h-enk/doks/discussions)
+## My Go-Agent is no longer in the agent pool
+
+This is usually caused by the token used to register the agent with the main server getting invalidated. This can be fixed by `ssh`-ing to the agent in question and running the following commands (ensure you have `sudo` permissions):
+
+```bash
+sudo rm -rf /var/lib/go-agent/config
+sudu systemctl restart go-agent
+```
+
+Then navigate back to the [GoCD Agents](http://gocd.agiledefense.lab/go/agents) pool and [enable]({{< relref "agent#enabling-environments-and-resources" >}}) it.

@@ -14,14 +14,27 @@ toc: true
 ---
 
 
-
 ### Setup
 
-This guide assumes you have a GoCd Pipeline already setup. If not, [Setup a Pipeline]({{< relref "create" >}}). 
+This guide assumes you have a GoCd Pipeline already setup and a `sonar-project.properties` file pre-configured in your package root. If you don't have a pipeline, [Setup a Pipeline]({{< relref "create" >}}). If you don't have a `sonar-project.properties` file, use this template to commit one:
 
-Log in to [SonarQube](http://sonar.agiledefense.lab) with your lab credentials.
+```
+# must be unique in a given SonarQube instance
+sonar.projectKey=<PROJECT_KEY>
+
+# Path is relative to the sonar-project.properties file. Defaults to .
+sonar.sources=<SOURCE>
+
+# URL to sonar host
+sonar.host.url=http://sonar.agiledefense.lab
+```
+
+Where `<PROJECT_KEY>` is the project key associated with your SonarQube project and `<SOURCE>` is the source directory where all your project code resides. You can use `.` if it's the entire project root.
+
 
 ### Add Project
+
+Log in to [SonarQube](http://sonar.agiledefense.lab) with your lab credentials.
 
 Click the **Add Project** drop down menu in the upper right-hand corner under your username and select `Manually`.
 
