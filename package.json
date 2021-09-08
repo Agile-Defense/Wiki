@@ -1,13 +1,12 @@
 {
   "name": "@hyas/doks",
   "description": "Doks theme",
-  "version": "0.3.4",
+  "version": "0.1.0",
   "browserslist": [
     "defaults"
   ],
-  "homepage": "https://agile-defense.github.io/agile-defense.github.io",
-  "repository": "https://github.com/h-enk/doks",
-  "license": "MIT",
+  "homepage": "https://agile-defense.github.io/AgileDefenseWiki",
+  "repository": "https://github.com/Agile-Defense/AgileDefenseWiki.git",
   "publishConfig": {
     "access": "public"
   },
