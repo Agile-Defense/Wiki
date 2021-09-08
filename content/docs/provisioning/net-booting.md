@@ -23,7 +23,10 @@ First, ensure you have a VPN connection to the O'Fallon Lab, have valid Innovati
 
 1. Right click on **DellCluster** and select **New Virtual Machine** 
 
-![img](images/netboot_1.png)
+![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/static/images/netboot_1.png)
 
+2. Select **Create a new virtual machine** if it isn't selected already and click ** Next**
 
-2. 
+![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/static/images/netboot_2.png)
+
+3. 
