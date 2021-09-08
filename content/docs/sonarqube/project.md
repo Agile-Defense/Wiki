@@ -27,9 +27,13 @@ Click the **Add Project** drop down menu in the upper right-hand corner under yo
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_1.png)
 
+<br/>
+
 On the next menu, enter in the `Project Key` and `Display Name`. They can be the same or different, but the `Project Key` is how Sonar indexes your project. Then, click **Set Up**.
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_2.png)
+
+<br/>
 
 ### Generate token
 
@@ -39,9 +43,13 @@ To do that, highlight `Generate a token`, enter a name for the token, we'll use 
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_3.png)
 
+<br/>
+
 After that, your token will appear. **Be sure to copy your token!!**. This is the only time it is displayed. If you lose it before adding it into the `Sonar-Scan` stage of the pipeline, you'll need to revoke and regenerate a new one.
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_4.png)
+
+<br/>
 
 ### Create Sonar-Scan Stage
 
@@ -49,15 +57,21 @@ Log into [GoCD]() with your lab credentials, and click on the wheel icon in the 
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_5.png)
 
+<br/>
+
 Then go to the **Stages** tab in your pipeline config and click **Add new stage**. 
 
 Name it `Sonar-Scan` or something to that effect and name the job something like `sonar-scanner`.
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_6.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_6.png" width="725" />
+
+<br/>
 
 For the **Command** enter `sonar-scanner`, and the **arguments** are `-Dlogin={TOKEN}` where `{TOKEN}` is the token you copied from the **Generate token** step. Now click **Save**.
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_7.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_7.png" width="725" />
+
+<br/>
 
 ### Optional: Dependency Checking
 
@@ -67,11 +81,15 @@ For the command enter `dependency-check`, and the **arguments** are `--disableAs
 
 {{< alert icon="👉" text="<b>NOTE</b>: Ensure that each argument is on its own line with no leading or trailing spaces." />}}
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_8.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_8.png" width="725" />
+
+<br/>
 
 Now make the `dependency-check` task first so it can generate the files that are needed when running `sonar-scanner`. Just drag it by the dots on the left, so it's above the top task. Be sure to click **Save**. 
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_9.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/sonar_9.png" width="725" />
+
+<br/>
 
 ### Restart Pipeline
 
