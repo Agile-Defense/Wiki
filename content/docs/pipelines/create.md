@@ -33,11 +33,11 @@ Then add the URL associated with the repository and click `Test Connection` to m
 
 {{< alert icon="👉" text="<b>NOTE</b>: If your default branch is named something other that <b>master</b>, you need to enter the <b>Repository Branch</b> name under <b>Advanced Settings</b>" />}}
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_2.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_2.png" width="725" />
 
 <br/>
 
-[comment]: <> (<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/netboot_6.png" width="725" />)
+
 
 ### Part 2: Pipeline Name
 
@@ -45,7 +45,7 @@ Enter a name for you pipeline.
 
 Under **Advanced Settings**, select the appropriate Pipeline Group (default is `CPaaS`). Here you can also enter parameters that will be available for every stage in a `Key: Value` store. It could be package names, directories, etc.
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_3.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_3.png" width="725" />
 
 <br/>
 
@@ -53,7 +53,7 @@ Under **Advanced Settings**, select the appropriate Pipeline Group (default is `
 
 Enter a name for your first Stage. This is normally to run builds or tests, depending on your package and what you need. If you do not want this first stage to start automatically after upstream changes, uncheck `Automatically run this stage on upstream changes` under **Advanced Settings**
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_4.png)
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_4.png" width="725" />
 
 <br/>
 
@@ -65,8 +65,7 @@ You can enter multiple commands, but it does not run in a real shell environment
 
 In the **Advanced Settings** menu, you can add environment variables and secure environment variables that are not visible, even on the GoCD site.
 
-![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_5.png)
-
+<img src="https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/pipeline_5.png" width="725" />
 
 After you've configured your pipeline, you can either click [Save + Edit Full Config →]({{< relref "pipeline-config" >}}) or [Save + Run this Pipeline →]({{< relref "create/#congratulations" >}})
 
