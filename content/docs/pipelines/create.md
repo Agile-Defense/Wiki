@@ -1,7 +1,7 @@
 ---
 title: "Create a GoCD Pipeline"
-description: "Create Pipelines"
-lead: "Create Pipelines"
+description: "How to create a basic pipeline in GoCD"
+lead: "How to create a basic pipeline in GoCD"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
