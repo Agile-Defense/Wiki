@@ -36,7 +36,7 @@ Once changes are committed so they're not lost, deploy via:
 npm run deploy
 ```
 
-**Congratulations!** Your changes are now live at https://agile-defense.github.io/AgileDefenseWiki/
+**Congratulations!** Your changes are now live at https://agile-defense.github.io
 
 
 ## Documentation

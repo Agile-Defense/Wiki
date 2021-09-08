@@ -5,8 +5,8 @@
   "browserslist": [
     "defaults"
   ],
-  "homepage": "https://agile-defense.github.io/AgileDefenseWiki",
-  "repository": "https://github.com/Agile-Defense/AgileDefenseWiki.git",
+  "homepage": "https://agile-defense.github.io/",
+  "repository": "https://github.com/Agile-Defense/agile-defense.github.io",
   "publishConfig": {
     "access": "public"
   },
