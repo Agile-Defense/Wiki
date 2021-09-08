@@ -32,7 +32,7 @@ First, ensure you have a VPN connection to the O'Fallon Lab, have valid Innovati
 
 3. Give your VM a name, then click **Next**. 
 
-> <sup>**NOTE**: The name given will end up being the hostname of the vm, as well as the DNS routing name. (i.e. if you name it `Test_VM`, the hostname will be `TestVM` because underscores get removed and the DNS endpoint will be `test_vm.agiledefense.lab`)</sup>
+{{< alert icon="👉" text="<b>NOTE</b>: The name given will end up being the hostname of the vm, as well as the DNS routing name. <br><br> (e.g. if you name it <b>Test_VM</b>, the hostname will be <b>TestVM</b> because underscores get removed and the DNS endpoint will be <b>test_vm.agiledefense.lab</b>)." />}}
 
 ![img](https://raw.githubusercontent.com/Agile-Defense/agile-defense.github.io/main/assets/images/netboot_3.png)
 

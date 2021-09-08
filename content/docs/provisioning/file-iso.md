@@ -92,4 +92,4 @@ First, ensure you have a VPN connection to the O'Fallon Lab, have valid Innovati
 
 You've successfully created a custom VM with your own OS! Log in with the credentials you set up during the OS installation process, and you're ready to go.
 
-> <sup>**NOTE**: This will not register the VM with DNS, nor will it setup LDAP authentication with the Active Directory. You will have to do that manually for your VM, if you so desire.</sup>
+{{< alert icon="👉" text="<b>NOTE</b>: This will not register the VM with DNS, nor will it setup LDAP authentication with the Active Directory. You will have to do that manually for your VM, if you so desire." />}}
