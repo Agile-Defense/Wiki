@@ -23,7 +23,7 @@ First, ensure you have a VPN connection to the O'Fallon Lab, have valid Innovati
 
 1. Right click on **DellCluster** and select **New Virtual Machine** 
 
-![img](1.png)
+![img](images/netboot_1.png)
 
 
 2. 

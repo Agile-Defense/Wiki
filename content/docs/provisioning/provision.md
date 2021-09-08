@@ -1,5 +1,5 @@
 ---
-title: "Provisioning New Lab Server VM"
+title: "Provisioning New Lab VM"
 description: "How to provision a new virtual machine in Innovations Lab vSphere"
 lead: "How to provision a new virtual machine in Innovations Lab vSphere"
 date: 2020-10-06T08:48:57+00:00

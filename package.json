@@ -5,19 +5,16 @@
   "browserslist": [
     "defaults"
   ],
+  "homepage": "https://agile-defense.github.io/agile-defense.github.io",
   "repository": "https://github.com/h-enk/doks",
   "license": "MIT",
   "publishConfig": {
     "access": "public"
   },
   "scripts": {
-    "init": "shx rm -rf .git && git init -b main",
-    "create": "exec-bin node_modules/.bin/hugo/hugo new",
-    "prestart": "npm run clean",
-    "start": "exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
-    "prebuild": "npm run clean",
-    "build": "exec-bin node_modules/.bin/hugo/hugo --gc --minify",
-    "build:preview": "npm run build -D -F",
+    "start": "npm run clean && exec-bin node_modules/.bin/hugo/hugo server --bind=0.0.0.0 --disableFastRender",
+    "build": "npm run clean && exec-bin node_modules/.bin/hugo/hugo --gc --minify",
+    "deploy": "npm run build && gh-pages -d public",
     "clean": "shx rm -rf public resources",
     "clean:install": "shx rm -rf package-lock.json node_modules ",
     "lint": "npm run -s lint:scripts && npm run -s lint:styles && npm run -s lint:markdown",
@@ -45,6 +42,7 @@
     "eslint": "^7.32",
     "exec-bin": "^1.0.0",
     "flexsearch": "^0.7.21",
+    "gh-pages": "^3.2.3",
     "highlight.js": "^11.2",
     "hugo-installer": "^3.1",
     "instant.page": "^5.1",
